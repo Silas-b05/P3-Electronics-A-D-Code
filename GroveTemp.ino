@@ -4,7 +4,7 @@ void setup() {
 }
 
 void loop() {
-    unsigned long SensorValue = analogRead(A0);
+    float SensorValue = analogRead(A0);
     #define T0 298.15
     #define B 4275
 
