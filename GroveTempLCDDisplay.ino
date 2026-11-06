@@ -26,9 +26,8 @@ void loop() {
     float Temperature = 1/(log(1023/SensorValue - 1)/B + 1/T0) - 273.15;
     Serial.println(Temperature);
 
-    // set the cursor to column 0, line 1
+
     lcd.setCursor(0, 1);
-    // print the temperature to the LCD
     lcd.print("Temp: " + String(Temperature) + " C");
 
     #define DELAY 1000

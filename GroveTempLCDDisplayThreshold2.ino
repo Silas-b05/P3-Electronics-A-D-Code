@@ -50,9 +50,9 @@ void loop() {
     lcd.setCursor(0, 0);
     lcd.print("Threshold: " + String(THRESHOLD) + " C");
 
-    // set the cursor to column 0, line 1
+
     lcd.setCursor(0, 1);
-    // print the temperature to the LCD
+
     lcd.print("Temp: " + String(Temperature) + " C");
 
     #define DELAY 1000
