@@ -81,10 +81,7 @@ void loop() {
 
         float u = Kp * error + Ki * integral + Kd * derivative;
 
-        if ((u < 255 && u > 0) ||
-            (u >= 255 && error < 0) ||
-            (u <= 0 && error > 0)) {
-
+        if ((u < 255 && u > 0) || (u >= 255 && error < 0) || (u <= 0 && error > 0)) {
             integral += error * deltaTime;
         }
 
